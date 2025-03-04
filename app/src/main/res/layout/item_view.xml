@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+
+    <!-- Driver Label -->
+    <TextView
+        android:id="@+id/labelDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Возач:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true" />
+
+    <!-- Driver Value -->
+    <TextView
+        android:id="@+id/driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/labelDriver"
+        android:layout_alignBaseline="@id/labelDriver"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textSize="14sp" />
+
+    <!-- Starting Destination Label -->
+    <TextView
+        android:id="@+id/labelStartDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Почетна дестинација:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/labelDriver"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Starting Destination Value -->
+    <TextView
+        android:id="@+id/startDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/labelStartDestination"
+        android:layout_alignBaseline="@id/labelStartDestination"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textSize="14sp" />
+
+    <!-- Ending Destination Label -->
+    <TextView
+        android:id="@+id/labelEndDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Крајна дестинација:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/labelStartDestination"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Ending Destination Value -->
+    <TextView
+        android:id="@+id/endDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/labelEndDestination"
+        android:layout_alignBaseline="@id/labelEndDestination"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textSize="14sp" />
+
+    <!-- Date Label -->
+    <TextView
+        android:id="@+id/labelDate"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="wrap_content"
+        android:text="Датум:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/labelEndDestination"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Date Value -->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/labelDate"
+        android:layout_alignBaseline="@id/labelDate"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/buttonJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Придружи се"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#DB8B4F"
+        android:layout_below="@id/labelDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/buttonRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оцени"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_below="@id/labelDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
